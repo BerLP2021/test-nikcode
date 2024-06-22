@@ -1,0 +1,64 @@
+.cardWrapper {
+    flex: 1 0 calc((100% - 30px) / 2);
+    max-width: calc((100% - 30px) / 2);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 6px;
+    padding: 10px 10px 20px;
+    overflow: hidden;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: scale 0.3s, box-shadow 0.3s;
+    will-change: transform;
+    @media screen and (hover: hover) {
+        &:hover {
+            scale: 1.05;
+            box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        flex-basis: calc((100% - 60px) / 3);
+        max-width: calc((100% - 60px) / 3);
+    }
+}
+.imgWrapper {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    aspect-ratio: 1.5;
+    
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.name {
+    font-size: 1.5rem;
+}
+.text {
+    font-size: 1.25rem;
+}
+.learnBtn {
+    display: block;
+    min-width: 50%;
+    padding: 10px 5px;
+    margin: 30px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition:box-shadow 0.3s, background-color 0.3s;
+    background-color: #eee;
+    border-radius: 6px;
+    border: 1px solid black;
+    outline: none;
+
+    cursor: pointer;
+    @media screen and (hover: hover) {
+        &:hover {
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+            background-color: #B3C8CF;
+        }
+    }
+}

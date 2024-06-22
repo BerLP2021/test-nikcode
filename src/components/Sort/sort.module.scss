@@ -1,0 +1,11 @@
+.form {
+    width: 45%;
+
+}
+.fieldset {
+    margin-inline: auto 0;
+    & > div {
+        padding: 10px;
+        display: inline-block;
+    }
+}

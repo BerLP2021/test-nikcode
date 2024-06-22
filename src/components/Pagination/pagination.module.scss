@@ -1,0 +1,25 @@
+.pagWrapper {
+    margin-block: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.navLink {
+    display: inline-block;
+    padding: 10px 5px;
+    min-width: 100px;
+    background-color: #eee;
+    transition:box-shadow 0.3s, background-color 0.3s;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    @media screen and (hover: hover) {
+        &:hover {
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+            background-color: #B3C8CF;
+        }
+    }
+}

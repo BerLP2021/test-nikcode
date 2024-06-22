@@ -1,0 +1,22 @@
+
+.imageWrapper {
+    width: 50%;
+    aspect-ratio: 1;
+    position: relative;
+    margin: 100px auto 0;
+}
+.name {
+    font-size: 36px;
+    margin-top: 50px;
+    text-align: center;
+}
+.contentWrapper {
+    width: 50%;
+    margin: 100px auto 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.map {
+    margin-top: 50px;
+}
